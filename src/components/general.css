@@ -1,0 +1,77 @@
+
+
+
+/* Nav and Logo*/
+
+.navMenu-container{
+    position: fixed;
+    padding:30px 0;
+    width:100%;
+    z-index: 100;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.navMenu-options p{
+    font-size: 2.1em;
+    color:black;
+
+}
+
+.navMenu-options button:hover {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    color: gray;
+  }
+  
+.navMenu-options p:hover {
+    color: gray;
+  }
+  
+.navMenu-options p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+  }
+
+.navMenu-group{
+    max-width: 800px;
+    margin:0 auto;
+}
+
+
+.navMenu-options{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content:  space-evenly;
+}
+
+.navMenu-options a:link {
+    text-decoration: none;
+}
+
+.login-button-menu:hover {
+    background-color: #fc766a;
+    color: white;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+     transform: translateY(-3px);
+}
+
+.register-button-menu:hover{
+    background-color: white;
+    color: black;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.logo{
+    width:25%
+}
+
+.logo img{
+    width:100%;
+}
