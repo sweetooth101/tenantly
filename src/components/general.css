@@ -32,6 +32,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 700;
+    font-size: 1.3em;
   }
 
 .navMenu-group{
@@ -74,6 +75,39 @@
 
 .logo img{
     width:100%;
+}
+
+.narrow{
+  display:none;
+}
+
+.menu-option {
+  font-size: 1.3em;
+  text-decoration: none;
+  width:100%;
+  color:black;
+  
+}
+
+
+.menu-option p{
+  text-decoration: none;
+  padding: .5em 0;
+  border-bottom: 1px solid black;
+}
+
+
+.last-option{
+  font-size: 1.3em;
+  text-decoration: none;
+  width:100%;
+  color:black;
+  
+}
+
+.last-option p {
+  padding: 15px 0;
+  
 }
 
 
@@ -131,7 +165,7 @@
   color: black;
   font-size: 3.3vw;
   line-height: 1.2;
-  opacity: 0;
+  /* opacity: 0; */
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.1s;
@@ -152,5 +186,275 @@
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
+}
+
+.bg-stretch .slide-frame .text p {
+  padding-top: 5px;
+  font-size: 1vw;
+  color: black;
+  font-family: "GTEestiDisplay-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+.start-button:hover{
+  background-color: #fc766a;
+}
+
+
+
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+
+.anchor-wrap{
+  position: absolute;
+  width: 100%;
+  bottom:30px;
+
+}
+
+.anchor {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+
+  animation-duration: 4s;
+
+  animation-name: bounce;
+
+  animation-timing-function: ease-in-out;
+
+  animation-play-state: running;
+
+  animation-iteration-count: infinite;
+  will-change: translate;
+}
+
+.anchor span {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+/* ARROW */
+.anchor span:before,
+.anchor span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -3px;
+  width: 18px;
+  height: 2px;
+  background: #fc766a;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.anchor span:after {
+  left: auto;
+  right: -3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+@media (max-width: 1024px){
+  .slide-frame .text .slide-title {
+      font-size: 5.3em;
+  }
+  .bg-stretch .slide-frame .text p {
+    color: gray;
+    font-size: 1.5em;
+}
+  .slide-frame{
+    position: relative;
+    bottom:25%;
+    margin:0 auto;
+  }
+
+}
+
+@media (max-width:768px){
+  .intro-section .bg-stretch{
+    width:100%;
+    background-image: url("../images//wallpaper.png");
+    background-size: 1500px auto;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+  }
+
+
+  .bg-stretch .slide-frame{
+    margin:0 auto;
+    bottom: 20%;
+    position: relative;
+    font-size: .8em;
+  }
+
+  .anchor-wrap{
+    position: absolute;
+    width: 100%;
+    bottom:30px;
+
+  }
+}
+
+@media (max-width: 650px) {
+  .narrow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .icon-burger {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    
+  }
+
+  .close-icon{
+    background-color: #fc766a; 
+    padding:.2em;
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    
+  }
+
+  .responsive {
+    display: none;
+  }
+
+  .logo {
+    width: 45%;
+  }
+  .narrow-responsive {
+    display: block;
+    text-align: center;
+    background: white;
+    padding: 15px 0 70px 0;
+    opacity: .95;
+  }
+  .narrow-responsive p:hover {
+    color: black;
+    
+    background-color: #fc766a;
+  }
+  .navMenu-options {
+    display: none;
+  }
+  .hide-menu{
+    display:none;
+  }
+
+  .anchor-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width:600px){
+
+  .slide-frame .text .slide-title {
+    font-size: 2.2em;
+}
+
+.bg-stretch .slide-frame .text p {
+  font-size: 1em;
+}
+
+  .anchor-wrap{
+    bottom:7px;
+  }
+
+  .intro-section .bg-stretch{
+    background-position: 50% 100%;
+  }
 }
 

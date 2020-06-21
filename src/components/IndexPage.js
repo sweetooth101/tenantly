@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import { StartButton } from './layer.js'
 
 
 const IndexPage = () =>(
@@ -12,11 +13,11 @@ const IndexPage = () =>(
                 <h1 className="slide-title">
                   Manage properties
                   <br /> at ease.
-                  </h1>
+                </h1>
       <p>Take care of tedious property management tasks in one place. <br />Be in charge of your properties, anytime, anywhere.
        </p>
       <Link to={"/register"}>
-        <button>GET STARTED</button>
+        <StartButton className='start-button'>GET STARTED</StartButton>
       </Link>
       </div>
       </div>

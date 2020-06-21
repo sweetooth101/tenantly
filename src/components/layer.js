@@ -12,3 +12,17 @@ export const MenuButton = styled.button`
     cursor: pointer;
     transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
+
+export const StartButton = styled.button`
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 9px 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+`
