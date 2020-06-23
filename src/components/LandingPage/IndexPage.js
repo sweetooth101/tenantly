@@ -24,6 +24,9 @@ const SectionCaption = styled.p`
   background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 50px;
+  @media(max-wdith 1024){
+    font-size:1em;
+  }
   
 `
 

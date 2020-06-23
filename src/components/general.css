@@ -412,6 +412,21 @@
   flex-wrap: wrap;
 }
 
+.Card h3{
+    color: black;
+    font-size: 30px;
+    font-family: "Work Sans", sans-serif;
+    margin: 20px 0 0 20px;
+    font-weight: 300;
+    width: 190px;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+
+/*second hero*/
+
 .bg-2-stretch {
   position: absolute;
   z-index: 1;
@@ -437,6 +452,99 @@
 }
 
 
+.bg-2-stretch .slide-2-frame{
+  margin-right:80px;
+}
+
+.bg-2-stretch .slide-2-frame .text{
+  margin-bottom: 100px;
+}
+
+.bg-2-stretch .slide-2-frame .text h1{
+  font-size: 2em;
+  word-spacing: 1px;
+  line-height: 30px;
+  letter-spacing: .6px;
+  margin-bottom: 15px;
+}
+
+.bg-2-stretch .slide-2-frame .text p {
+  padding-top: 5px;
+  font-size: 1vw;
+  opacity: 0.5;
+  font-family: "GTEestiDisplay-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  color: rgb(46, 37, 37);
+  word-spacing: 1px;
+  line-height: 20px;
+  letter-spacing: .6px;
+}
+
+
+/*footer*/
+
+.page-holder{
+  max-width: 1374px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.f-area-holder{
+  padding:40px 0 24px;
+  overflow: hidden;
+}
+
+.f-area-holder .box{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -4px 0 0;
+  padding: 0 70px 0 0;
+  width: 25.5%;
+}
+
+.f-area-holder .box h2 {
+  margin: 0 0 8px;
+  font: 21px/1.2 "bodoni-urw", Arial, Helvetica, sans-serif;
+}
+
+.f-area-holder .box ul {
+  margin: 0;
+  padding: 0 0 20px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.f-area-holder .box ul a {
+  color: #191a1a;
+  text-decoration: none;
+}
+
+.social-nav.s-hidden {
+  display: none;
+}
+
+.f-area-holder .box ul {
+  margin: 0;
+  padding: 0 0 20px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.social-nav .fab{
+  font-size: 32px;;
+}
+
+.social-nav li{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 16px 0 0;
+}
+
+.f-area-holder .box:last-child {
+  width: 23.5%;
+}
 @media (max-width: 1350px){
 
   .bg-stretch .slide-frame{
@@ -445,7 +553,6 @@
   }
   
 }
-
 
 
 @media (max-width: 1024px){
@@ -471,6 +578,28 @@
     bottom: 25%;
  
   }
+
+  .intro-section .bg-2-stretch{
+    background-image: url("../images/compguys.png");
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-position: 50% 10%;
+  }
+
+  .bg-2-stretch .slide-2-frame {
+    position: relative;
+    bottom:40%;
+    margin-right: 0px;
+    margin-top: 200px;
+  }
+
+  .bg-2-stretch .slide-2-frame .text p{
+    font-size: .7em;
+  }
+
+  
 
 }
 
@@ -502,6 +631,9 @@
 
   }
 }
+
+
+
 
 @media (max-width: 650px) {
   .narrow {
@@ -583,6 +715,10 @@
 
   .intro-section .bg-stretch{
     background-position: 50% 200%;
+  }
+
+  .intro-section .bg-2-stretch{
+    background-position: 40% 50%;
   }
 }
 
