@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 
 import '../components/general.css';
@@ -11,8 +11,23 @@ function Menu() {
     const droppingdown = ()  => {
         setDropdown(!dropdown)
       };
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll)
+    })
+    
+    const handleScroll = event =>{
+      const scrollTop = window.pageYOffset;
+      if(scrollTop > 50){
+        setScrolled(true);
+      }else {
+        setScrolled(false)
+      }
+    };
+
+   
     return(
-        <div className='navMenu-container'>
+        <div className={scrolled ? 'navMenu-container HeaderScrolled' : 'navMenu-container'}>
             <div className='navMenu-group'>
                 <div className='navMenu-options'>
                     <div className='logo'>

@@ -7,6 +7,41 @@ import Card from './Card'
 
 import styled from 'styled-components'
 
+
+
+const Cells = styled.div`
+  /* border: 1px solid red; */
+  background-color: #f99a95;
+`
+
+const SectionCaption = styled.p`
+  margin-bottom: 70px;
+  font-size: 76px;
+  text-align: center;
+  font-weight: 600;
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 50px;
+  
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+  padding-bottom: 50px;
+
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
+
 const IndexPage = () =>(
     <div className='hero'>
         <div className="intro-section">
@@ -51,6 +86,16 @@ const IndexPage = () =>(
                 image={require('../../images/workorders2.png')} />
           </div>
       </div>
+      <Cells>
+      <SectionCaption>All your needs and wants</SectionCaption>
+      <SectionCellGroup>
+        {staticdata.cells.map(cell => (
+          <Cell 
+            title={cell.title}
+            image={cell.image} />
+        ))}
+      </SectionCellGroup>
+    </Cells>
     </div>
 );
 

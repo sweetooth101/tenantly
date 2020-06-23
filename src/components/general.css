@@ -18,10 +18,10 @@
 }
 
 .navMenu-options button:hover {
-    background: white;
+    
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     transform: translateY(-3px);
-    color: gray;
+    color: white;
   }
   
 .navMenu-options p:hover {
@@ -52,6 +52,12 @@
 
 .navMenu-options a:link {
     text-decoration: none;
+}
+
+.HeaderScrolled{
+  background: white;
+  padding: 15px 0;
+  backdrop-filter: blur(20px);
 }
 
 .login-button-menu:hover {
@@ -163,7 +169,7 @@
   font-weight: 500;
   margin: 0;
   color: black;
-  font-size: 3.3vw;
+  font-size: 3.5em;
   line-height: 1.2;
   /* opacity: 0; */
   animation: HeroAnimation;
@@ -184,13 +190,11 @@
 
 .bg-stretch .slide-frame {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .bg-stretch .slide-frame .text p {
   padding-top: 5px;
-  font-size: 1vw;
+  font-size: 1em;
   color: black;
   font-family: "GTEestiDisplay-Medium", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
@@ -333,22 +337,145 @@
 }
 
 
+/* CARDS */
+
+.Cards{
+  margin-bottom: 50px;
+}
+
+.Card{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* padding: 20px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.Card:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+
+.Card:hover img {
+  transform: translateY(-20px);
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100% "";
+}
+
+.Card img{
+  position: absolute;
+  z-index: 1;
+  transition:.8s;
+  height: 110%;
+  background-size: cover;
+
+}
+
+.Card p {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  align-self: end;
+  margin: 0 0 20px 20px;
+}
+
+.Cards h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+}
+
+.CardGroup{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bg-2-stretch {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.intro-section .bg-2-stretch {
+  width: 100%;
+  background-image: url("../images/compguy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1350px){
+
+  .bg-stretch .slide-frame{
+    position: relative;
+    bottom: 15%;
+  }
+  
+}
+
+
 
 @media (max-width: 1024px){
+
+  .intro-section .bg-stretch{
+    width:100%;
+    background-image: url("../images/finalhero_ipad3.png");
+   
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+
   .slide-frame .text .slide-title {
-      font-size: 5.3em;
+      font-size: 3.5em;
   }
   .bg-stretch .slide-frame .text p {
     color: gray;
-    font-size: 1.5em;
+    font-size: 1em;
 }
-  .slide-frame{
-    position: relative;
-    bottom:25%;
+  .bg-stretch .slide-frame{
+   position: relative;
     margin:0 auto;
+    bottom: 25%;
+ 
   }
 
 }
+
+
+
 
 @media (max-width:768px){
   .intro-section .bg-stretch{
@@ -356,7 +483,7 @@
     background-image: url("../images//wallpaper.png");
     background-size: 1500px auto;
     background-repeat: no-repeat;
-    background-position: 50% 90%;
+    background-position: 50% 100%;
   }
 
 
@@ -365,6 +492,7 @@
     bottom: 20%;
     position: relative;
     font-size: .8em;
+    margin-bottom: 0px;
   }
 
   .anchor-wrap{
@@ -454,7 +582,13 @@
   }
 
   .intro-section .bg-stretch{
-    background-position: 50% 100%;
+    background-position: 50% 200%;
   }
 }
 
+
+@media (max-width:400px){
+  .intro-section .bg-stretch{
+    background-position: 50% 120%;
+  }
+}
