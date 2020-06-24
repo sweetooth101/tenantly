@@ -67,7 +67,7 @@
      transform: translateY(-3px);
 }
 
-.register-button-menu:hover{
+.navMenu-options .register-button-menu:hover{
     background-color: white;
     color: black;
     background: white;
@@ -630,6 +630,9 @@
     bottom:30px;
 
   }
+  .bg-2-stretch .slide-2-frame .text {
+    margin-bottom: 150px;
+}
 }
 
 
