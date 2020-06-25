@@ -545,6 +545,154 @@
 .f-area-holder .box:last-child {
   width: 23.5%;
 }
+
+
+/*login*/
+
+.form-container{
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff2f1 ;
+
+}
+
+
+.form-container form{
+  background-color: white;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height:500px;
+  max-width: 400px;
+  width: 100%;
+  margin:1em;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+
+
+.form-container .logo-login {
+  display:flex;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.register-radio-container {
+  /* padding-bottom: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.register-radio-container .radio-p {
+  font-family: "Montserrat";
+  padding: 10px;
+}
+
+.form-container .input-form{
+  margin: 3px;
+  width:80%;
+  text-align: center;
+}
+
+.form-container input {
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  background-color: transparent;
+  outline: none;
+  background-color: white;
+  font-family: "Montserrat";
+  font-size: 15px;
+  width:85%;
+}
+
+.form__button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #fc766a;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+.form__button:hover {
+  background-color: white;
+  color: #fc766a;
+  border: 1px solid #fc766a;
+}
+
+.no-account {
+  padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  font-size: 0.8em;
+}
+
+.login-p{
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.no-account .register-button {
+  border: none;
+  text-decoration: none;
+  color: #fc766a;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  left: 1px;
+  top: -3.1px;
+  background-color: white;
+}
+
+
+.register-radio-container input{
+  width:unset;
+}
+
+
+
+/*Register*/
+.form-container .logo-register {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 auto;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 60%;
+}
+
+
+
 @media (max-width: 1350px){
 
   .bg-stretch .slide-frame{
