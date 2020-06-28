@@ -1,0 +1,30 @@
+{
+    "properties":[
+        {
+            "id": 1,
+            "name": "Incubators Galore",
+            "address": "123 Fake Ave",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94016",
+            "owner": 1,
+            "sqft": 2200,
+            "bathrooms": 2,
+            "rooms": 3,
+            "year": 1975
+        },
+        {
+            "id": 2,
+            "name": "Smelly",
+            "address": "123 Fake Blvd",
+            "city": "Bacon Level",
+            "state": "CA",
+            "zip": "94016",
+            "owner": 2,
+            "sqft": 2200,
+            "bathrooms": 2,
+            "rooms": 4,
+            "year": 1999
+    }
+    ]
+}
