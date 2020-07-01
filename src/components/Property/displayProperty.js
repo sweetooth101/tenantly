@@ -6,10 +6,10 @@ import staticdata from './staticdata.json'
 
 
 function DisplayProperty(){
-    const [property, setProperty] = useState([]);
+    const [property, setProperty] = useState(staticdata.properties);
     const [detele, setDetele] = useState(false);
 
-    console.log(staticdata.properties[0])
+    console.log('i',property.map(p =>(p)))
 
     return(
         <div className="property-display">
@@ -31,42 +31,42 @@ function DisplayProperty(){
             hideModal={this.hideModal}
           />
         ) : null} */}
-        
-        <div className="card" style={{width: "18rem"}}>
-          <div className="propertyBody-left card-body">
+        {property.map(p => (
+          <div className="card" style={{width: "18rem"}} key={p.id}>
+          <div className="propertyBody-left card-body" >
             <div className="propertyBody-info ">
               <h5>Name </h5>
-              <p>{staticdata.properties[0].name}</p>
+              <p>{p.name}</p>
             </div>
             <div className="propertyBody-info">
               <h5>Address</h5>
-              <p>{staticdata.properties[0].address}</p>
+              <p>{p.address}</p>
             </div>
             <div className="propertyBody-info">
               <h5>City </h5>
-              <p>{staticdata.properties[0].city}</p>
+              <p>{p.city}</p>
             </div>
             <div className="propertyBody-info">
               <h5>Zipcode </h5>
-              <p>{staticdata.properties[0].zip}</p>
+              <p>{p.zip}</p>
             </div>
           </div>
           <div className="propertyBody-right">
             <div className="propertyBody-info">
               <h5>Sq. Ft. </h5>
-              <p>{staticdata.properties[0].sqft}</p>
+              <p>{p.sqft}</p>
             </div>
             <div className="propertyBody-info">
               <h5>Beds </h5>
-              <p>{staticdata.properties[0].rooms}</p>
+              <p>{p.rooms}</p>
             </div>
             <div className="propertyBody-info">
               <h5>Baths</h5>
-              <p> {staticdata.properties[0].bathrooms}</p>
+              <p> {p.bathrooms}</p>
             </div>
             <div className="propertyBody-info">
               <h5>Year Built </h5>
-              <p>{staticdata.properties[0].year}</p>
+              <p>{p.year}</p>
             </div>
             <div className="propertyBody-info">
               <h5>Max </h5>
@@ -74,6 +74,8 @@ function DisplayProperty(){
             </div>
           </div>
         </div>
+        ))}
+        
       </div>
     )
 

@@ -1,23 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import PropertyCard from './displayProperty';
 
 import staticdata from './staticdata.json'
 
 function PropertyList(){
-    console.log('here',staticdata.properties.map(property =>(property.name)))
+    const [properties, setProperties] = useState(staticdata)
+    console.log('here',properties)
  
     return (
         <div container spacing={24} style={{ padding: 20 }}>
             <h1
-            className={null}
-            variant="h5"
-            component="h2"
-            gutterBottom
             >
             Properties:
             </h1>
-            {staticdata.properties.map(property => (
+            {properties.properties.map(property => (
             <PropertyCard
                 key={property.id}
                 name={property.name}
