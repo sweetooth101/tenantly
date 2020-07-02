@@ -25,6 +25,19 @@
             "bathrooms": 2,
             "rooms": 4,
             "year": 1999
-    }
+        },
+        {
+            "id": 3,
+            "name": "Incubators Galore33",
+            "address": "123 Fake Ave33",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94016",
+            "owner": 2,
+            "sqft": 2200,
+            "bathrooms": 2,
+            "rooms": 3,
+            "year": 1975
+        }
     ]
 }

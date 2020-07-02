@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 import staticdata from './staticdata.json'
 
 
 
 function DisplayProperty(){
-    const [property, setProperty] = useState(staticdata.properties);
-    const [detele, setDetele] = useState(false);
-
-    console.log('i',property.map(p =>(p)))
+    
 
     return(
         <div className="property-display">
@@ -31,7 +29,7 @@ function DisplayProperty(){
             hideModal={this.hideModal}
           />
         ) : null} */}
-        {property.map(p => (
+        {/* {data.properties.map(p => (
           <div className="card" style={{width: "18rem"}} key={p.id}>
           <div className="propertyBody-left card-body" >
             <div className="propertyBody-info ">
@@ -74,7 +72,7 @@ function DisplayProperty(){
             </div>
           </div>
         </div>
-        ))}
+        ))} */}
         
       </div>
     )

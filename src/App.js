@@ -21,8 +21,7 @@ function App() {
 
       </div>
       <Route path={"/properties"} component={PropertyList} />
-      <Route path={"/property"} component={DisplayProperty} />
-      <Route path={"/propertyone"} component={PropertyCard} />
+      
       
     </div>
   );
