@@ -1,28 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
-import PropertyCard from './displayProperty';
+import PropertyCard from './propertyCard';
 import axios from 'axios';
 import staticdata from './staticdata.json'
 
 function PropertyList(){
 
-    const [data, setData] = useState({ properties:[ ] });
-    const [detele, setDetele] = useState(false);
+    const [data, setData] = useState([]);
+    const [query, setQuery] = useState('react');
+
+    const [detele, setDetele] = useState(null);
 
    
 
+    useEffect(() => {
+        let ignore = false;
+    
+        async function fetchData() {
+          const result = await axios('https://tenantly-back.herokuapp.com/properties/' );
+          if (!ignore) setData(result.data);
+        }
+    
+        fetchData();
+        return () => { ignore = true; }
+      }, []);
 
-    useEffect(async ()=>{
-      const id = 1;
-      
-      const result = await axios(`https://tenantly-back.herokuapp.com/properties/`);
-      console.log('hi', result.data)
-      setData(result.data);
-      console.log(data)
-    }, []);
+
+  
     
-    
-    console.log(data)
+    console.log('bu',data.map(p =>(p.name)))
     
     return (
         <div container spacing={24} style={{ padding: 20 }}>
@@ -30,7 +36,8 @@ function PropertyList(){
             >
             Properties:
             </h1>
-            {/* {data.map(property => (
+           
+            {data.map(property => (
             <PropertyCard
                 key={property.id}
                 name={property.name}
@@ -41,7 +48,7 @@ function PropertyList(){
                 id={property.id}
             />
             ))}
-     */}
+    
             <div className={null}>
             <Link to="/add-property">
                 <div size="medium" className={null}>
