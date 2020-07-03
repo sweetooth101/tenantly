@@ -693,6 +693,37 @@
 
 
 
+/*Property List*/
+
+.container-propertyList{
+  margin-left:2em;
+}
+
+.property-list{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+ .property-card{
+  padding:1.2em;
+  width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    font-size: em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.property-card h1{
+  font-size: .5em;
+}
+
 @media (max-width: 1350px){
 
   .bg-stretch .slide-frame{

@@ -7,45 +7,45 @@ import staticdata from './staticdata.json'
 const PropertyCard = (props) =>{
   console.log(props)
     return(
-        <div className='card' style={{width: "18rem;"}}>
+        <div className='property-card' >
             <Link>
             <div className="propertyBody-info ">
-              <h5>Name </h5>
+              <h1>Name </h1>
               <p>{props.name}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>Address</h5>
+              <h1>Address</h1>
               <p>{props.address}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>City </h5>
+              <h1>City </h1>
               <p>{props.city}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>Zipcode </h5>
+              <h1>Zipcode </h1>
               <p>{props.zipcode}</p>
             </div>
     
          
           <div className="propertyBody-right">
             <div className="propertyBody-info">
-              <h5>Sq. Ft. </h5>
+              <h1>Sq. Ft. </h1>
               <p>{props.sqft}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>Beds </h5>
+              <h1>Beds </h1>
               <p>{props.rooms}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>Baths</h5>
+              <h1>Baths</h1>
               <p> {props.bathrooms}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>Year Built </h5>
+              <h1>Year Built </h1>
               <p>{props.year}</p>
             </div>
             <div className="propertyBody-info">
-              <h5>Max </h5>
+              <h1>Max </h1>
               <p>{3}</p>
             </div>
             </div>

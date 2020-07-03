@@ -31,31 +31,35 @@ function PropertyList(){
     console.log('bu',data.map(p =>(p.name)))
     
     return (
-        <div container spacing={24} style={{ padding: 20 }}>
+        <div className='container-propertyList'>
             <h1
             >
             Properties:
             </h1>
-           
+           <div className='property-list'>
             {data.map(property => (
-            <PropertyCard
-                key={property.id}
-                name={property.name}
-                address={property.address}
-                city={property.city}
-                state={property.state}
-                zipcode={property.zip}
-                id={property.id}
-            />
-            ))}
-    
-            <div className={null}>
-            <Link to="/add-property">
-                <div size="medium" className={null}>
-                + Add New Property
+                <PropertyCard
+                    key={property.id}
+                    name={property.name}
+                    address={property.address}
+                    city={property.city}
+                    state={property.state}
+                    zipcode={property.zip}
+                    id={property.id}
+                />
+                ))}
+
+                <div className={null}>
+                <Link to="/add-property">
+                    <div size="medium" className={null}>
+                    + Add New Property
+                    </div>
+                </Link>
                 </div>
-            </Link>
-            </div>
+           </div>
+            
+    
+            
         </div>
         );
 }
