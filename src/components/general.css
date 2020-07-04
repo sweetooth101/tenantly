@@ -710,19 +710,62 @@
  .property-card{
   padding:1.2em;
   width: 250px;
-    height: 200px;
-    border: 1px solid black;
-    margin: 10px;
-    display: flex;
-    font-size: em;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  font-size: em;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow:0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+
+.property-card:hover{
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .property-card h1{
   font-size: .5em;
 }
+
+.property-card p{
+  color:black;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.propertyBody-info{
+  text-align: center;
+}
+
+
+.add{
+  width: 165px;
+  height: 200px;
+  border: 1px solid #fc766a;
+  border-radius: 4px;
+  box-shadow:0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fc766a;
+  
+}
+
+
+.add:hover{
+  background-color: rgba(252, 118, 106, 0.1);
+  color:black;
+}
+
+
 
 @media (max-width: 1350px){
 

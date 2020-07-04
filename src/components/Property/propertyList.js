@@ -38,7 +38,8 @@ function PropertyList(){
             </h1>
            <div className='property-list'>
             {data.map(property => (
-                <PropertyCard
+                <Link to='property'>
+                    <PropertyCard
                     key={property.id}
                     name={property.name}
                     address={property.address}
@@ -47,15 +48,20 @@ function PropertyList(){
                     zipcode={property.zip}
                     id={property.id}
                 />
+                
+                </Link>
+                
                 ))}
-
-                <div className={null}>
-                <Link to="/add-property">
-                    <div size="medium" className={null}>
+                <Link to='add-property'>
+                    <div className='add'>
+                    
+                    
                     + Add New Property
+                
+            
                     </div>
                 </Link>
-                </div>
+                
            </div>
             
     
